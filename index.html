@@ -3,78 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hermann Feckl Schreinerei - Möbel und Innenausbau"
-    />
     <title>Hermann Feckl Schreinerei</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <style>
-      body {
-    background-color: #A89C7C;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column;
-    text-align: left;
-}
-
-.container {
-    max-width: 600px;
-}
-
-.logo {
-    width: 150px;
-    position: absolute;
-    left: 20px;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.subtitle {
-    font-size: 18px;
-    font-weight: bold;
-    color: #3D3D3B;
-    margin-bottom: 20px;
-}
-
-.address {
-    font-size: 16px;
-    color: #3D3D3B;
-}
-
-footer {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
-
-.impressum {
-    font-size: 14px;
-    color: #3D3D3B;
-    text-decoration: none;
-}
-    </style>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <!-- Header mit Logo und Titel -->
+    <header class="header">
+      <span class="header-title">Hermann Feckl <br />Schreinerei</span>
+      <nav class="nav">
+        <a href="mailto:hermann.feckl@t-online.de" class="nav-link">Kontakt</a>
+      </nav>
+    </header>
+
+    <!-- Hauptbereich mit Logo und Text -->
     <div class="container">
-      <img src="logo.png" alt="Hermann Feckl Schreinerei Logo" class="logo" />
+      <img src="logo.png" alt="Logo" class="logo" />
       <div class="content">
-        <h1>Hermann Feckl<br />Schreinerei</h1>
-        <h2 class="subtitle">Möbel und Innenausbau</h2>
+        <h1>Hermann Feckl <br />Schreinerei</h1>
+        <p class="subtitle">Möbel und Innenausbau</p>
         <p class="address">
           Loiting 26<br />
           84432 Hohenpolding<br />
@@ -85,7 +31,16 @@ footer {
       </div>
     </div>
     <footer>
-      <a href="#" class="impressum">Impressum</a>
+      <a href="#impressum" class="impressum-link">Impressum</a>
     </footer>
+
+    <!-- Lightbox für Impressum -->
+    <div id="impressum" class="lightbox">
+      <div class="lightbox-content">
+        <a href="#" class="lightbox-close">&times;</a>
+        <h2>Impressum</h2>
+        <p>Hier muss dann der Impressumstext rein.....</p>
+      </div>
+    </div>
   </body>
 </html>

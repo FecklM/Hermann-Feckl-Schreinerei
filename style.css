@@ -1,0 +1,144 @@
+body {
+    background-color: #A89C7C;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: left;
+    overflow: hidden
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Verteilung der Elemente */
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.header-title {
+    font-size: 1rem;
+    color: white;
+}
+
+.nav {
+    margin-left: auto;
+    /* Schiebt die Navigation nach rechts */
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo {
+    width: 200px;
+    margin-right: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5E553E;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.address {
+    font-size: 1rem;
+    color: #5E553E;
+    margin-top: 2rem;
+}
+
+.address a {
+    color: #5E553E;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* Lightbox Overlay */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox p,
+h2,
+a {
+    color: #fff;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.lightbox-content {
+    max-width: 40%;
+    /* Maximale Breite auf 40% des Bildschirms setzen */
+    margin: 0 auto;
+    /* Zentriert den Inhalt horizontal */
+    text-align: left;
+    padding: 20px;
+    /* Ein wenig Abstand rund um den Text */
+}
